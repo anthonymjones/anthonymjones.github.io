@@ -1,0 +1,141 @@
+<div id="contactInfo" class="row">
+  <div class="col-md-12">
+    <div class="contact-info">
+      <span class="contact-title">Get in Contact</span>
+      <div class="divider">
+        <hr>
+      </div>
+      <img class="profile-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAQ8AAAAJDJkOGI5NmUzLWE3OGYtNDU2Yi05MmI3LWJmYjI4YmZlODJhYw.jpg" />
+      <br>
+      <p><a href="tel:+17204152768">720.415.2768</a>
+        <br>anthonyjones0519@gmail.com
+        <br>Denver, CO</p>
+      <a href="https://www.linkedin.com/in/anthonymjones519"><i class="fa fa-2x fa-linkedin"></i></a> &nbsp;
+      <a href="https://github.com/anthonymjones"><i class="fa fa-2x fa-github"></i></a>
+
+    </div>
+  </div>
+</div>
+
+<div id="currentPos" class="row">
+  <div class="col-md-12">
+    <div class="current-pos">
+      <h3>Current Position</h3>
+      <div class="divider">
+        <hr>
+      </div>
+      <p>Software Developer for Briebug Software, Inc. developing AngularJS applications with heavy JavaScript for client centric experiences.</p>
+    </div>
+  </div>
+</div>
+
+<div id="certs" class="row">
+  <div class="col-md-12">
+    <div class="certifications">
+      <h3>Certifications</h3>
+      <div class="divider">
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="well well-lg cert-well">
+            <ul>
+              <li class="cert-item">
+                <img src="http://www.pmtraining.com/Assets/images/scrum-class-overview.png" alt="Certified Scrum Master" title="Certified Scrum Master" />
+              </li>
+              <li class="cert-item">
+                <a href="https://www.codeschool.com/users/1413557" target="_blank">
+                  <img src="https://www.codeschool.com/assets/logos/logo-code-school-ps-d9dccc25edf14c034904fc3f848a0c43.svg" alt="Code School Report Card" title="Code School Report Card" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="techSkills"></div>
+<div class="techSkills">
+  <div class="row">
+    <div class="col-md-12 skills-title">
+      <h3>Technical Skills</h3>
+      <div class="divider">
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h4>Programming Languages</h4>
+      <div class="divider">
+        <hr>
+      </div>
+      <div class="well well-lg prog-lang-well">
+        <div class="pl-icons">
+          <ul class="prog-langs" ng-repeat="pl in vm.programmingLangs">
+            <li><img src="{{pl.logo}}" alt="{{pl.name}}" title="{{pl.name}}" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h4>Database Management Tools</h4>
+      <div class="divider">
+        <hr>
+      </div>
+      <div class="well well-lg db-tools-well">
+        <div class="dbt-icons">
+          <ul class="db-langs" ng-repeat="dt in vm.dbTools">
+            <li><img src="{{dt.logo}}" alt="{{dt.name}}" title="{{dt.name}}" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h4>Web Development</h4>
+      <div class="divider">
+        <hr>
+      </div>
+      <div class="well well-lg web-dev-well">
+        <div class="web-icons">
+          <ul class="web-langs" ng-repeat="wl in vm.webLangs">
+            <li><img src="{{wl.logo}}" alt="{{wl.name}}" title="{{wl.name}}" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="profExp" class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="prof-exp">
+      <h3>Professional Experience</h3>
+      <br>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" ng-repeat="pe in vm.professionalExp">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="heading{{$index}}">
+            <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true" aria-controls="collapse{{index}}">
+          <h4>{{pe.company}} <br><small>({{pe.dates}}) <span class="pull-right">{{pe.location}}</span></small></h4>
+            </a>
+            </h4>
+          </div>
+          <div id="collapse{{$index}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading{{$index}}">
+            <div class="panel-body" ng-repeat="pj in pe.projects | orderBy:'id':true">
+              <h6>{{pj.name}}</h6>
+              <p>{{pj.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+</div>

@@ -1,0 +1,158 @@
+/* Styles go here */
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.header-img {
+  max-height: 25%;
+  width: 100%;
+}
+
+.contact-title {
+  font-size: xx-large;
+  font-weight: 100;
+}
+
+.profile-img {
+  width: 140px;
+}
+
+.contact-info {
+  margin-top: -10px;
+  background-color: #9BAEBD;
+  padding: 5%;
+  line-height: 44px;
+  font-size: x-large;
+  font-weight: 300;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.current-pos {
+  padding: 5%;
+  text-align: center;
+  font-size: large;
+  color: #545F80;
+  box-shadow: inset 0px 11px 10px -10px #CCC, inset 0px -11px 8px -10px #CCC;
+}
+
+.current-pos h3 {
+  font-weight: 200;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.link-icons {
+  padding: 10px;
+}
+
+.prog-langs,
+.db-langs,
+.web-langs {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.certifications {
+  padding: 5%;
+  background-color: #9BAEBD;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.certifications h3 {
+  font-weight: 100;
+}
+
+.cert-well {
+  background-color: white;
+  /* width: 500px; */
+}
+
+.certifications img {
+  width: 160px;
+}
+
+.cert-item {
+  padding: 2% 2%;
+}
+
+.techSkills {
+  padding: 5%;
+  text-align: center;
+  color: #545F80;
+  box-shadow: inset 0px 11px 10px -10px #CCC, inset 0px -11px 8px -10px #CCC;
+}
+
+.skills-title h3 {
+  font-weight: 200;
+}
+
+.prog-langs img {
+  width: 75px;
+}
+
+.db-langs img {
+  width: 120px;
+}
+
+.well-lg {
+  padding-left: 0 !important;
+}
+
+.web-langs img {
+  width: 75px;
+}
+
+.pl-icons {
+  width: 475px;
+  text-align: left;
+}
+
+.dbt-icons {
+  width: 500px;
+  text-align: left;
+}
+
+.web-icons {
+  width: 1810px;
+  text-align: left;
+}
+
+.prog-lang-well {
+  height: 125px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.db-tools-well {
+  height: 125px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.web-dev-well {
+  height: 125px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.prof-exp {
+  padding: 5%;
+}
